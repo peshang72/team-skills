@@ -1,0 +1,10 @@
+{
+  "name": "team",
+  "displayName": "Team skills",
+  "description": "Mentor mode: learn to code while building real products, at each learner's own level",
+  "author": {
+    "name": "Peshang",
+    "url": "https://github.com/peshang72"
+  },
+  "repository": "https://github.com/peshang72/team-skills"
+}

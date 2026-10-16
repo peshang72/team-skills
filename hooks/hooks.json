@@ -1,0 +1,15 @@
+{
+  "description": "Switch on mentor mode when the person has a learner profile",
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "if [ -f \"$HOME/.learning/profile.md\" ]; then echo 'Learner profile found at ~/.learning/profile.md: run every coding task through the team:mentor skill, including tasks started with another skill.'; fi"
+          }
+        ]
+      }
+    ]
+  }
+}

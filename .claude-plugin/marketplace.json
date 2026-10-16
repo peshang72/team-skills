@@ -1,0 +1,15 @@
+{
+  "name": "team-skills",
+  "description": "Agent skills shared across our projects",
+  "owner": {
+    "name": "Peshang",
+    "url": "https://github.com/peshang72"
+  },
+  "plugins": [
+    {
+      "name": "team",
+      "source": "./",
+      "description": "Mentor mode: learn to code while building real products, at each learner's own level"
+    }
+  ]
+}

@@ -111,8 +111,8 @@ while they predict and explain. Default risk zones in a web app:
 - personal data, secrets, and environment configuration
 
 The repo's `AGENTS.md` may list more under a `Mentoring` section; add those.
-Missing section or session-start hook → propose both to the maintainer per
-[SETUP.md](SETUP.md).
+Missing section, or plugin not enabled in the repo's `.claude/settings.json`
+→ propose both to the maintainer per [SETUP.md](SETUP.md).
 
 ## Deadline mode
 
