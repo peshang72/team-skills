@@ -7,9 +7,12 @@
   },
   "plugins": [
     {
-      "name": "team",
+      "name": "peshang",
       "source": "./",
       "description": "Mentor mode: learn to code while building real products, at each learner's own level"
     }
-  ]
+  ],
+  "renames": {
+    "team": "peshang"
+  }
 }

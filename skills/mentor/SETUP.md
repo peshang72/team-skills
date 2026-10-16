@@ -17,7 +17,7 @@ Merge into the repo's `.claude/settings.json`, keeping existing keys:
     }
   },
   "enabledPlugins": {
-    "team@team-skills": true
+    "peshang@team-skills": true
   }
 }
 ```
@@ -34,8 +34,8 @@ Add to the repo's `AGENTS.md` (or `CLAUDE.md` if there is no `AGENTS.md`):
 ## Mentoring
 
 - If `~/.learning/profile.md` exists, the person is a learner: run every coding
-  task through the `team:mentor` skill, including tasks started with another
-  skill. Anyone can start with `/team:mentor`.
+  task through the `peshang:mentor` skill, including tasks started with another
+  skill. Anyone can start with `/peshang:mentor`.
 - Project risk zones, on top of the skill's defaults: {risk zones}.
 ```
 
