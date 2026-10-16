@@ -2,6 +2,60 @@
 
 A Claude Code plugin marketplace with the skills we share across projects.
 
+## Install
+
+The marketplace is `team-skills` and it ships one plugin, `peshang`.
+
+### For yourself, in every project
+
+In any Claude Code session, run:
+
+```
+/plugin marketplace add peshang72/team-skills
+/plugin install peshang@team-skills
+/reload-plugins
+```
+
+Or from a shell:
+
+```sh
+claude plugin marketplace add peshang72/team-skills
+claude plugin install peshang@team-skills
+```
+
+To get updates automatically, open `/plugin` → Marketplaces → team-skills and
+select **Enable auto-update**. To update by hand, run
+`/plugin marketplace update team-skills`. To remove it, run
+`/plugin uninstall peshang@team-skills`.
+
+### For a whole team, in one repo
+
+Commit the plugin to the repo's `.claude/settings.json` so every teammate gets
+it when they trust the folder:
+
+```json
+{
+  "extraKnownMarketplaces": {
+    "team-skills": {
+      "source": { "source": "github", "repo": "peshang72/team-skills" },
+      "autoUpdate": true
+    }
+  },
+  "enabledPlugins": {
+    "peshang@team-skills": true
+  }
+}
+```
+
+Merge these keys into any settings already there. For mentor mode the repo also
+needs a `Mentoring` section in `AGENTS.md`; see
+[Turn it on in a project](#turn-it-on-in-a-project) below.
+
+### Check it worked
+
+Run `/plugin` and look for `peshang` under Installed, or type `/peshang:` and
+check that `/peshang:mentor` is offered.
+
 ## Mentor mode (`peshang` plugin)
 
 Learn to code while building real products. The agent places each learner on a
