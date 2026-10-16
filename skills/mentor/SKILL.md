@@ -121,6 +121,13 @@ to Observer for the rest of the task and work at full speed. At the end, write
 each new concept they saw as a record with `demonstrated: no` and a
 `next_review` of tomorrow, so the learning is deferred, not lost.
 
+## Other skills
+
+When another skill runs during a learner's session (e.g. `tdd`,
+`diagnosing-bugs`), it supplies *what* good work looks like; the learner's
+level still decides *who* does each part. Keep the cycle steps: explain,
+learner acts, predict, run.
+
 ## Level changes
 
 - **Promote** an area one level when the learner's last 3 cycles there needed

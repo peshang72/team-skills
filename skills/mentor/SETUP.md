@@ -12,7 +12,8 @@ Add to the repo's `AGENTS.md` (or `CLAUDE.md` if there is no `AGENTS.md`):
 ## Mentoring
 
 - If `~/.learning/profile.md` exists, the person is a learner: run every coding
-  task through the `mentor` skill. Anyone can start with `/mentor`.
+  task through the `mentor` skill, including tasks started with another skill.
+  Anyone can start with `/mentor`.
 - Project risk zones, on top of the skill's defaults: {risk zones}.
 ```
 
@@ -33,7 +34,7 @@ Merge into the repo's `.claude/settings.json`, keeping any existing hooks:
         "hooks": [
           {
             "type": "command",
-            "command": "if [ -f \"$HOME/.learning/profile.md\" ]; then echo 'Learner profile found at ~/.learning/profile.md: run every coding task through the mentor skill.'; fi"
+            "command": "if [ -f \"$HOME/.learning/profile.md\" ]; then echo 'Learner profile found at ~/.learning/profile.md: run every coding task through the mentor skill, including tasks started with another skill.'; fi"
           }
         ]
       }
