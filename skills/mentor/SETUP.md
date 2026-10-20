@@ -43,3 +43,19 @@ Fill `{risk zones}` by reading the repo: name the concrete files, tables, or
 flows where a bug loses money, data, or trust (the auth callback, the payment
 webhook, `migrations/`, the job that sends emails). Name things a teammate can
 find; skip generic categories the skill already covers.
+
+## Optional: a welcome note for a new learner
+
+Nothing personal goes in the repo. To greet a new learner, the maintainer puts
+`~/.learning/welcome.md` on the learner's machine before their first session:
+
+```md
+---
+for: <learner's GitHub login>
+from: <maintainer>
+---
+What you'd like the mentor to tell them, in a sentence or two.
+```
+
+Onboarding passes it on in its own words once the login matches, then deletes
+the file. If the learner places the file themselves, they'll read it first.

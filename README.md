@@ -58,13 +58,19 @@ check that `/peshang:mentor` is offered.
 
 ## Mentor mode (`peshang` plugin)
 
-Learn to code while building real products. The agent places each learner on a
-level per area (UI, server, database, testing, tooling), then teaches through
-the project's own test cycles: the learner predicts, writes, and runs the code,
-with help scaled to their level. Risky code (auth, payments, migrations,
-personal data) stays at Pair level or below. Progress lives privately in each
-learner's `~/.learning/`, so it follows them across repos and is never
-committed.
+Learn to code or design while building real products. The agent places each
+learner on a level per area (UI, server, database, testing, tooling, UX,
+visual), focuses on the areas their goal is about, then teaches through the
+project's own cycles: the learner predicts, writes, and runs the code, with
+help scaled to their level. Design is taught only from cited, high-trust
+sources ([SOURCES.md](skills/mentor/SOURCES.md)) and checked by testing with
+real people. Risky work (auth, payments, migrations, personal data,
+accessibility, checkout flows) stays at Pair level or below. Progress lives
+privately in each learner's `~/.learning/`, so it follows them across repos and
+is never committed.
+
+To greet a new learner personally, see the welcome note in
+[SETUP.md](skills/mentor/SETUP.md#optional-a-welcome-note-for-a-new-learner).
 
 ### Turn it on in a project
 

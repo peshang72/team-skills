@@ -9,6 +9,7 @@ under a screen.
 # Learner profile
 
 - Name: Aram
+- GitHub: aram-dev
 - Explanation language: ckb
 - Goal: Build and ship a full feature on my own by April 2027.
 - Time: 6 hours a week
@@ -16,13 +17,15 @@ under a screen.
 
 ## Levels
 
-| Area | Level | Since |
-|---|---|---|
-| ui | 1 Guided | 2026-10-16 |
-| server | 0 Observer | 2026-10-16 |
-| database | 0 Observer | 2026-10-16 |
-| testing | 1 Guided | 2026-10-16 |
-| tooling | 1 Guided | 2026-10-16 |
+| Area | Level | Focus | Since |
+|---|---|---|---|
+| ui | 1 Guided | yes | 2026-10-16 |
+| server | 0 Observer | yes | 2026-10-16 |
+| database | 0 Observer | yes | 2026-10-16 |
+| testing | 1 Guided | yes | 2026-10-16 |
+| tooling | 1 Guided | yes | 2026-10-16 |
+| ux | 0 Observer | no | 2026-10-16 |
+| visual | 1 Guided | no | 2026-10-16 |
 
 ## Preferences
 
@@ -36,8 +39,15 @@ Areas, for web apps:
 - **database** — schema, queries, migrations, transactions
 - **testing** — writing and reading unit, integration, and end-to-end tests
 - **tooling** — terminal, git, package manager, debugging, reading errors
+- **ux** — users, jobs, flows, usability testing
+- **visual** — layout, spacing, type, colour, hierarchy, critique of generated UI
 
 Add an area when a project needs one these don't cover (e.g. `mobile`).
+
+**Focus** is set from the goal at onboarding: `yes` for the areas the goal is
+about, `no` for the rest. The learner can switch an area's focus anytime; its
+level is already placed. A design goal focuses `ux`, `visual`, `ui`, and
+`tooling`; a coding goal focuses the five code areas.
 
 ## Records
 
@@ -70,6 +80,41 @@ Review: Why validate at the boundary instead of inside each function?
   happens*, not a definition.
 - When understanding is later corrected, add `superseded_by: NNNN` to the old
   record instead of deleting it.
+- `ux` and `visual` records carry a `source:` field: the link (or book and
+  chapter) for the cited principle, so a warm-up review can point back to it.
+- A **wrong usability prediction** is a record: what the learner expected, what
+  people actually did, and why. Its review question gives a similar scenario
+  and asks them to predict.
+
+## Usability files
+
+`~/.learning/usability/YYYY-MM-DD-slug.md`. Written at the UX pass, before
+building, so predictions can't drift to match what happened; finished when the
+learner brings back test notes, which may be sessions later.
+
+```md
+---
+project: hair-salon
+feature: rebook from the confirmation email
+status: untested
+participants: target users
+---
+
+## Task
+You booked a haircut last month. Book the same haircut again for next Friday.
+
+## Predictions
+- People will miss the "rebook" link below the receipt.
+
+## Notes
+(the learner's notes from each session)
+
+## Debrief
+(each prediction: right or wrong, and why)
+```
+
+- `status`: `untested` → `tested` once the debrief is written.
+- `participants`: `target users`, or `teammates` (weaker evidence).
 
 ## Spacing
 
